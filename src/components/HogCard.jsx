@@ -7,11 +7,11 @@ export default function HogCard({ hog, ...props }) {
 
     function handleCardClick() {
         setShowDetails( ( previous ) => !previous );
-    }
+    };
 
     if (isHidden) {
         return null;
-    }
+    };
 
     return (
         <>
@@ -20,7 +20,7 @@ export default function HogCard({ hog, ...props }) {
                     <h3 className="header">{hog.name}</h3>
                 </div>
                 <div className="image">
-                    <img alt={`Photo of ${hog.name || 'this hog'}`} src={hog.image} /> 
+                    <img alt={`Photo of ${hog.name || 'hog name'}`} src={hog.image} /> 
                 </div>
                 <div className="extra content">
                     { showDetails ? <HogDetails hog={hog} /> : null }

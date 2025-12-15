@@ -41,15 +41,15 @@ export default function HogForm({ onFormSubmission, ...props }) {
                 <h4 className="fields"> Add a New Hog </h4>
                 <div className="field">
                     <label htmlFor="name"> Name: </label>
-                    <input type="text" id="name" name="name" placeholder="Enter hog name..." value={newPig.name} onChange={handleChange}/>
+                    <input type="text" id="name" name="name" placeholder="Please enter hog name..." value={newPig.name} onChange={handleChange}/>
                 </div>
                 <div className="field">
                     <label htmlFor="specialty"> Specialty: </label>
-                    <input type="text" id="specialty" name="specialty" placeholder="Enter hog specialty..." value={newPig.specialty} onChange={handleChange}/>
+                    <input type="text" id="specialty" name="specialty" placeholder="Please enter hog specialty..." value={newPig.specialty} onChange={handleChange}/>
                 </div>
                 <div className="field">
                     <label htmlFor="weight"> Weight: </label>
-                    <input type="number" id="weight" name="weight" placeholder="Enter hog weight..." value={newPig.weight} onChange={handleChange}/>
+                    <input type="number" id="weight" name="weight" placeholder="Please enter hog weight..." value={newPig.weight} onChange={handleChange}/>
                 </div>
                 <div className="field">
                     <label htmlFor="greased"> Greased? </label>
@@ -57,7 +57,7 @@ export default function HogForm({ onFormSubmission, ...props }) {
                 </div>
                 <div className="field">
                     <label htmlFor="image"> Image URL: </label>
-                    <input type="text" id="image" name="image" placeholder="Enter hog image URL..." value={newPig.image} onChange={handleChange}/>
+                    <input type="text" id="image" name="image" placeholder="Please enter hog image URL..." value={newPig.image} onChange={handleChange}/>
                 </div>
                 <button className="ui submit button" type="submit"> Add Hog </button>
             </form>

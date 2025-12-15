@@ -28,7 +28,7 @@ function App() {
 
 	//Define functiont to handle adding hog
 	function handleAddHog(newHog) {
-			console.log("New Pig Submitted:", newHog);
+			console.log("New Hog Submitted:", newHog);
 			setAllHogs((prev) => [...prev, newHog]);
 	};
 
