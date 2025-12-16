@@ -1,7 +1,7 @@
 import HogDetails from "./HogDetails";
 import { useState } from "react";
 
-export default function HogCard({ hog, ...props }) {
+export default function HogTile({ hog, ...props }) {
     const [ showDetails, setShowDetails ] = useState(false);
     const [ isHidden, setIsHidden ] = useState(false);
 

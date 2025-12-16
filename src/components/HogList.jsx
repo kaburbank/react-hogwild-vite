@@ -1,10 +1,10 @@
 import React from "react";
-import HogCard from "./HogCard";
+import HogTile from "./HogTile";
 
 export default function HogList({hogs, ...props}) {
     
     const cards = hogs.map((hog,index) => {
-        return <HogCard key={hog.name} hog={hog}/>
+        return <HogTile key={hog.name} hog={hog}/>
     });
 
     return (

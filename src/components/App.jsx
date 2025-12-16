@@ -6,16 +6,11 @@ import HogForm from "./HogForm";
 import hogs from "../porkers_data";
 
 function App() {
-
+	//Define states
 	const [showGreased, setShowGreased] = useState(false);
 	const [allHogs, setAllHogs] = useState(hogs);
 	const [sortBy, setSortBy] = useState("");
-
-	//Define function to show greased pigs
-	function handleShowGreased() {
-			setShowGreased((previous) => !previous);
-	};
-
+	
 	//Filter hogs into a list and sort by name
 	const filteredHogs = allHogs.filter(hog => (showGreased ? hog.greased : true));
 	let displayedHogs = [...filteredHogs];
@@ -24,6 +19,11 @@ function App() {
 		displayedHogs.sort((a, b) => a.name.localeCompare(b.name));
 	} else if (sortBy === "weight") {
 		displayedHogs.sort((a, b) => a.weight - b.weight);
+	};
+
+	//Define function to show greased pigs
+	function handleShowGreased() {
+			setShowGreased((previous) => !previous);
 	};
 
 	//Define functiont to handle adding hog
